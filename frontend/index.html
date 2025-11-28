@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat Rooms</title>
+  </head>
+  <body>
+    <input id="username" placeholder="Username" />
+
+    <!-- Room selection -->
+    <div>
+      <button class="roomBtn" data-room="Room1">Room 1</button>
+      <button class="roomBtn" data-room="Room2">Room 2</button>
+      <button class="roomBtn" data-room="Room3">Room 3</button>
+    </div>
+
+    <input id="message" placeholder="Message" />
+    <button id="sendBtn">Send</button>
+
+    <ul id="chatList"></ul>
+
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
